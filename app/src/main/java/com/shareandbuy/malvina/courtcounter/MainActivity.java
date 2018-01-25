@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
     int darthVaderAttack = 0;
     TextView empireScore;
     TextView rebelScore;
+    LinearLayout rebelFullLayout;
+    LinearLayout empireFullLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
         this.empire_ships_amount = Integer.parseInt(getString(R.string.empire_total_ships));
         this.rebel_ships_amount = Integer.parseInt(getString(R.string.rebel_total_ships));
@@ -33,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
         this.darthVaderAttack = Integer.parseInt(getString(R.string.darth_vader_tie_fighter_damage));
 
         this.empireScore = findViewById(R.id.empire_total_ships);
+        this.empireFullLayout = (LinearLayout) this.empireScore.getParent();
         this.rebelScore = findViewById(R.id.rebels_total_ships);
+        this.rebelFullLayout = (LinearLayout) this.rebelScore.getParent();
 
         this.empireScore.setText(String.valueOf(this.empire_ships_amount));
         this.rebelScore.setText(String.valueOf(this.rebel_ships_amount));
@@ -72,16 +75,16 @@ public class MainActivity extends AppCompatActivity {
     void setAttackedSection(int layoutId){
         if(layoutId == rebelScore.getId()){
             rebelScore.setTextColor(getResources().getColor(R.color.attacked_text));
-            rebelScore.setBackgroundColor(getResources().getColor(R.color.attacked_layout));
-            empireScore.setTextColor(getResources().getColor(R.color.score_container));
-            empireScore.setBackgroundColor(getResources().getColor(R.color.title_text));
+            rebelFullLayout.setBackgroundColor(getResources().getColor(R.color.attacked_layout));
+            empireScore.setTextColor(getResources().getColor(R.color.title_text));
+            empireFullLayout.setBackgroundColor(getResources().getColor(R.color.score_container));
             return;
         }
         if(layoutId == empireScore.getId()){
             empireScore.setTextColor(getResources().getColor(R.color.attacked_text));
-            empireScore.setBackgroundColor(getResources().getColor(R.color.attacked_layout));
-            rebelScore.setTextColor(getResources().getColor(R.color.score_container));
-            rebelScore.setBackgroundColor(getResources().getColor(R.color.title_text));
+            empireFullLayout.setBackgroundColor(getResources().getColor(R.color.attacked_layout));
+            rebelScore.setTextColor(getResources().getColor(R.color.title_text));
+            rebelFullLayout.setBackgroundColor(getResources().getColor(R.color.score_container));
         }
     }
 }
