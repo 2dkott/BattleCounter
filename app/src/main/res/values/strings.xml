@@ -4,13 +4,13 @@
     <string name="rebels_amount_planet">Yavin 4</string>
     <string name="empire_amount_title">Empire fleet\n(Total Amount)</string>
     <string name="empire_amount_deathstar">DeathStar</string>
-    <string name="rebel_total_ships">1000</string>
+    <string name="rebel_total_ships">200</string>
     <string name="starfighter_damage">2</string>
     <string name="luke_starfighter_damage">10</string>
     <string name="millennium_falcon_damage">10</string>
     <string name="darth_vader_tie_fighter_damage">20</string>
     <string name="tie_fighter_damage">2</string>
-    <string name="empire_total_ships">1000</string>
+    <string name="empire_total_ships">500</string>
     <string name="starfighter_button_name">StarFighter\nattack:2</string>
     <string name="luke_starfighter_button_name">Luke\'StarFighter\nattack:10</string>
     <string name="millennium_falcon_button_name">Millennium Falcon\nattack:10</string>
