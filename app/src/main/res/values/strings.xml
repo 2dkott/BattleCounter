@@ -11,11 +11,11 @@
     <string name="darth_vader_tie_fighter_damage">20</string>
     <string name="tie_fighter_damage">2</string>
     <string name="empire_total_ships">1000</string>
-    <string name="starfighter_button_name">StarFighter\nattack:-2</string>
-    <string name="luke_starfighter_button_name">Luke\'StarFighter\nattack: -10</string>
-    <string name="millennium_falcon_button_name">Millennium Falcon\nattack: -10</string>
-    <string name="tie_fighter_button_name">Tie Fighter\nattack: -2</string>
-    <string name="dart_vader_button_name">Dart Vader Fighter\nattack: -20</string>
+    <string name="starfighter_button_name">StarFighter\nattack:2</string>
+    <string name="luke_starfighter_button_name">Luke\'StarFighter\nattack:10</string>
+    <string name="millennium_falcon_button_name">Millennium Falcon\nattack:10</string>
+    <string name="tie_fighter_button_name">Tie Fighter\nattack:2</string>
+    <string name="dart_vader_button_name">Dart Vader Fighter\nattack:20</string>
     <string name="reset_battle">Start battle againt</string>
     <string name="death_star_live_status">Operating</string>
     <string name="death_star_destroyed_status">Destroyed</string>
