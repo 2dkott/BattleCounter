@@ -3,206 +3,205 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_weight="1">
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        >
+        android:orientation="vertical"
+        android:layout_weight="1">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1">
-            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/swbattle" />
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:layout_weight="1">
 
-                <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/rebels_background" />
 
-                <LinearLayout
-                    android:layout_width="@dimen/score_title_width"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/yellow"
-                    android:layout_margin="@dimen/score_title_margin"
-                    android:layout_gravity="center_horizontal">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/rebels_amount_title"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:layout_marginTop="@dimen/score_title_margin"
-                        android:textColor="@color/black"/>
-                    <TextView
-                        android:id="@+id/rebels_total_ships"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="1000"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/title_text_size"
-                        android:textColor="@color/black"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/rebels_amount_planet"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:layout_marginTop="@dimen/score_title_margin"
-                        android:textColor="@color/black"/>
-                    <TextView
-                        android:id="@+id/yavin_score"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="Live"
-                        android:layout_marginBottom="@dimen/score_title_margin"
-                        android:textSize="@dimen/title_text_size"
-                        android:textColor="@color/black"/>
-                </LinearLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="@dimen/score_title_width"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true">
-                        <Button
-                            android:id="@+id/starfighter_attack"
-                            android:layout_width="wrap_content"
+                        android:background="@color/yellow"
+                        android:layout_margin="@dimen/score_title_margin"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="@string/starfighter_button_name"
-                            android:layout_margin="@dimen/score_title_margin"
-                            android:onClick="attack"/>
-                        <Button
-                            android:id="@+id/luke_attack"
-                            android:layout_width="wrap_content"
+                            android:text="@string/rebels_amount_title"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/score_title_margin"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/rebels_total_ships"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="@string/luke_starfighter_button_name"
-                            android:layout_margin="@dimen/score_title_margin"
-                            android:onClick="attack"/>
-                        <Button
-                            android:id="@+id/mel_falcon_attack"
-                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:text="1000"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/title_text_size"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="@string/millennium_falcon_button_name"
-                            android:layout_margin="@dimen/score_title_margin"
-                            android:onClick="attack"/>
+                            android:text="@string/rebels_amount_planet"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/score_title_margin"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/yavin_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Live"
+                            android:layout_marginBottom="@dimen/score_title_margin"
+                            android:textSize="@dimen/title_text_size"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
-                </RelativeLayout>
-            </FrameLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1">
-            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/rebels_background" />
-                <LinearLayout
-                    android:layout_width="@dimen/score_title_width"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/yellow"
-                    android:layout_margin="@dimen/score_title_margin"
-                    android:layout_gravity="center_horizontal">
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/empire_amount_title"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:layout_marginTop="@dimen/score_title_margin"
-                        android:textColor="@color/black"/>
-                    <TextView
-                        android:id="@+id/empire_total_ships"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="1000"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/title_text_size"
-                        android:textColor="@color/black"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/empire_amount_deathstar"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:layout_marginTop="@dimen/score_title_margin"
-                        android:textColor="@color/black"/>
-                    <TextView
-                        android:id="@+id/death_star_score"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/score_title_margin"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="Live"
-                        android:textSize="@dimen/title_text_size"
-                        android:textColor="@color/black"/>
-                </LinearLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        >
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true">
-                        <Button
-                            android:id="@+id/tie_fighter"
-                            android:layout_width="wrap_content"
+                            <Button
+                                android:id="@+id/starfighter_attack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/starfighter_button_name"
+                                android:layout_margin="@dimen/score_title_margin"
+                                android:textColor="@color/yellow"
+                                android:background="@color/black"
+                                android:onClick="attack"/>
+                            <Button
+                                android:id="@+id/luke_attack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/luke_starfighter_button_name"
+                                android:layout_margin="@dimen/score_title_margin"
+                                android:textColor="@color/yellow"
+                                android:background="@color/black"
+                                android:onClick="attack"/>
+                            <Button
+                                android:id="@+id/mel_falcon_attack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/millennium_falcon_button_name"
+                                android:layout_margin="@dimen/score_title_margin"
+                                android:textColor="@color/yellow"
+                                android:background="@color/black"
+                                android:onClick="attack"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="@dimen/score_title_width"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/yellow"
+                        android:layout_margin="@dimen/score_title_margin"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="@string/tie_fighter_button_name"
-                            android:layout_margin="@dimen/score_title_margin"
-                            android:onClick="attack"/>
-                        <Button
-                            android:id="@+id/dart_vader"
-                            android:layout_width="wrap_content"
+                            android:text="@string/empire_amount_title"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/score_title_margin"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/empire_total_ships"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="@string/dart_vader_button_name"
-                            android:layout_margin="@dimen/score_title_margin"
-                            android:onClick="attack"/>
+                            android:gravity="center"
+                            android:text="1000"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/title_text_size"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/empire_amount_deathstar"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/score_title_margin"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/death_star_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/score_title_margin"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Live"
+                            android:textSize="@dimen/title_text_size"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
-                </RelativeLayout>
-            </FrameLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true">
+                            <Button
+                                android:id="@+id/tie_fighter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/tie_fighter_button_name"
+                                android:layout_margin="@dimen/score_title_margin"
+                                android:textColor="@color/yellow"
+                                android:background="@color/black"
+                                android:onClick="attack"/>
+                            <Button
+                                android:id="@+id/dart_vader"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/dart_vader_button_name"
+                                android:layout_margin="@dimen/score_title_margin"
+                                android:textColor="@color/yellow"
+                                android:background="@color/black"
+                                android:onClick="attack"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </FrameLayout>
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="14"
+        android:layout_height="wrap_content"
         android:background="@color/black"
         android:textColor="@color/yellow"
         android:text="@string/reset_battle"
