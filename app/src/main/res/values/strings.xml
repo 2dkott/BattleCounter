@@ -16,4 +16,9 @@
     <string name="millennium_falcon_button_name">Millennium Falcon\nattack: -10</string>
     <string name="tie_fighter_button_name">Tie Fighter\nattack: -2</string>
     <string name="dart_vader_button_name">Dart Vader Fighter\nattack: -20</string>
+    <string name="reset_battle">Start battle againt</string>
+    <string name="death_star_live_status">Operating</string>
+    <string name="death_star_destroyed_status">Destroyed</string>
+    <string name="yavin_live_status">Live</string>
+    <string name="yavin_destroyed_status">Destroyed</string>
 </resources>
