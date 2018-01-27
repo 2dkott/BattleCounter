@@ -20,5 +20,5 @@
     <string name="death_star_live_status">Operating</string>
     <string name="death_star_destroyed_status">Destroyed</string>
     <string name="yavin_live_status">Live</string>
-    <string name="yavin_destroyed_status">Destroyed</string>
+    <string name="yavin_destroyed_status">Annihilated</string>
 </resources>
