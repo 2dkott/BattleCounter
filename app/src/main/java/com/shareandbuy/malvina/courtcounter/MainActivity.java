@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout rebelFullLayout;
     LinearLayout empireFullLayout;
     int luke_combo = 0;
+    int dart_vader_combo = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
 
         if(this.luke_combo == 3){
             this.deathStarScore.setText(getString(R.string.death_star_destroyed_status));
+        }
+        if(this.dart_vader_combo == 3){
+            this.yavinScore.setText(getString(R.string.yavin_destroyed_status));
         }
 
     }
