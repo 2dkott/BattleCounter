@@ -91,14 +91,14 @@ public class MainActivity extends AppCompatActivity {
 
     void setAttackedSection(int layoutId){
         if(layoutId == this.rebelScore.getId()){
-            this.deathStarScore.setTextColor(getResources().getColor(R.color.attacked_text));
+            this.deathStarScore.setTextColor(getResources().getColor(R.color.black));
             this.rebelFullLayout.setBackgroundColor(getResources().getColor(R.color.attacked_layout));
             this.empireScore.setTextColor(getResources().getColor(R.color.black));
             this.empireFullLayout.setBackgroundColor(getResources().getColor(R.color.yellow));
             return;
         }
         if(layoutId == this.empireScore.getId()){
-            this.empireScore.setTextColor(getResources().getColor(R.color.attacked_text));
+            this.empireScore.setTextColor(getResources().getColor(R.color.black));
             this.empireFullLayout.setBackgroundColor(getResources().getColor(R.color.attacked_layout));
             this.rebelScore.setTextColor(getResources().getColor(R.color.black));
             this.rebelFullLayout.setBackgroundColor(getResources().getColor(R.color.yellow));
